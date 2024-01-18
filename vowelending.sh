@@ -1,0 +1,1 @@
+ls -a /usr/bin | grep -iE '[aeiou]$'
