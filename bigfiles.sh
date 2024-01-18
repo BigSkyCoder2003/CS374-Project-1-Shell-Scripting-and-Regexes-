@@ -1,1 +1,1 @@
- du -b /usr/bin/* | sort -rh | head -n 7
+ du -b /usr/bin/* | sort -rh | head -n 7 | awk '{sub(".*/", "", $2); print $1 "\t" $2}'
